@@ -40,7 +40,7 @@ ul li {
 }
 
 ul li::before {
-    content: "\\2022"; /* Adiciona marcador estilo bullet point */
+    content: "•"; /* Adiciona marcador estilo bullet point */
     color: #003366;
     font-weight: bold;
     display: inline-block;
