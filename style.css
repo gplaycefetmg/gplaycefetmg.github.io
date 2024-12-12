@@ -1,21 +1,31 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f9f9f9; /* Fundo mais claro para conforto visual */
+    color: #444; /* Texto mais suave */
 }
 
 header {
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #003366; /* Azul escuro representando profissionalismo */
+    color: #ffffff; /* Texto branco para contraste */
     padding: 20px;
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
+    background-color: #ffffff; /* Fundo branco para destaque de conteúdo */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
 }
 
 h3 {
-    color: #333;
+    color: #003366; /* Azul escuro para títulos */
+    border-bottom: 2px solid #003366; /* Linha para separar títulos */
+    padding-bottom: 5px;
 }
 
 ul {
@@ -23,7 +33,32 @@ ul {
     padding: 0;
 }
 
+ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -15px;
+}
+
+ul li::before {
+    content: "\\2022"; /* Adiciona marcador estilo bullet point */
+    color: #003366;
+    font-weight: bold;
+    display: inline-block;
+    width: 15px;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
+    font-size: 0.9em;
+    color: #666; /* Texto mais claro para diferenciação */
+}
+
+footer a {
+    color: #003366; /* Link azul escuro */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Efeito visual ao passar o mouse */
 }
